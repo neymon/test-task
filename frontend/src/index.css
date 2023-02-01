@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#root {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+aside {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chat {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+  margin-top: 10px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin: 5px 10px 5px auto;
+  padding: 4px;
+  border: 1px solid black;
+}
+
+.other-message {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.user-name {
+  font-size: 14px;
+  color: blue;
+}
+
+.message {
+  display: block;
+  justify-content: end;
+  width: 100%;
+  word-wrap: break-word;
+}

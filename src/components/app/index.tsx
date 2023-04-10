@@ -5,12 +5,12 @@ import share from './images/share.png';
 import info from './images/info.png';
 import refresh from './images/refresh.png';
 import { useRef, useState } from 'react';
+import { Camera } from '@components/camera';
+import type { CameraType } from '@components/camera/types';
 import Button from '@components/button';
 import Popup from '@components/popup';
 import LoadingIndicator from '@components/loading-indicator';
-import { Camera, CameraType } from 'react-camera-pro';
 import DowloadLink from '@components/dowload-link';
-
 
 const App = () => {
   const camera = useRef<CameraType>( null );

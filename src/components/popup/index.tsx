@@ -1,6 +1,5 @@
 import './popup.css';
 import type { PropsWithChildren } from 'react';
-import classNames from 'classnames';
 
 type Props = PropsWithChildren<{
   className?: string;
@@ -8,7 +7,7 @@ type Props = PropsWithChildren<{
 
 const Popup = ( { children, className }: Props ) => {
   return (
-    <div className={ classNames( [ 'popup-container', className ] ) }>
+    <div className={ [ 'popup-container', className ].join( ' ' ) }>
       <div className='popup'>
         { children }
       </div>

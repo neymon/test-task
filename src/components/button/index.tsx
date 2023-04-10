@@ -1,6 +1,5 @@
 import './button.css';
 import type { PropsWithChildren } from 'react';
-import classNames from 'classnames';
 
 type Props = PropsWithChildren<{
   className?: string;
@@ -9,7 +8,7 @@ type Props = PropsWithChildren<{
 }>;
 
 const Button = ( { className, children, disabled, onClick }: Props ) => (
-  <button className={ classNames( [ className, disabled ? 'disabled' : '' ] ) } onClick={ disabled ? undefined : onClick }>
+  <button className={ [ className, disabled ? 'disabled' : '' ].join( ' ' ) } onClick={ disabled ? undefined : onClick }>
     { children }
   </button>
 );
